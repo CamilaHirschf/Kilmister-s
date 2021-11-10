@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="buscador.css" type="text/css" />
+    <meta charset="utf-8">
+    <title>Buscador</title>
+
+</head>
+
+<body  onload="mostrarAutos()">
+    <a href="./../Home/home.html" class="home">Home</a>
+    <div class="buscador-container">
+        <div class="card">
+            <button type="button" onclick="mostrarAutos()">Buscar</button></p>
+            <div class="filter-section">
+                <label for="tipoVehiculo">Tipo de Vehiculo</label>
+                <select name="tipoVehiculo" id="tipoVehiculo" form="tipoVehiculoform">
+                    <option value="cualquiera">Cualquiera</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Coupe">Coupe</option>
+                    <option value="Utilitario">Utilitario</option>
+                    <option value="Hatchback">Hatchback</option>
+                </select>
+                <label for="marca">Marca</label>
+                <select name="marca" id="marca" form="marcaform">
+                    <option value="todas">Todas</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="VolksWagen">VolksWagen</option>
+                    <option value="Citroën">Citroën</option>
+                </select>
+                <label for="condicion">Condicion</label>
+                <select name="condicion" id="condicion" form="condicionform">
+                    <option value="cualquieraCondicion">Cualquiera</option>
+                    <option value="Usado">Usado</option>
+                    <option value="Nuevo">Nuevo</option>
+                </select>
+                <label for=precioMin>Precio Minimo</label>
+                <input type="text" name="precioMin" id="precioMin" value="">
+                <label for=precioMax>Precio Maximo</label>
+                <input type="text" name="precioMax" id="precioMax" value="">
+
+            </div>
+            <div class="results-section" id="results-section">
+                <!--  <div class="car">
+                    <div>
+                        <img src="https://zonadelmotor.com/wp-content/uploads/2020/02/Cambiar-El-Tablero-De-Instrumentos-De-Un-Corsa-2.jpg" alt="corsa blanco">
+
+                    </div>
+                    <h3>
+                        chevrolet corsa
+                    </h3>
+                    <small>
+                        100.000km
+                    </small>
+                </div>
+                <div class="car">
+                    <div>
+                        <img src="https://www.testdelayer.com.ar/pruebas/chevrolet-corsa/chevrolet-corsa-classic-gls-1.JPG" alt="">
+                    </div>
+                    <h3>
+                        chevrolet corsa
+                    </h3>
+                    <small>
+                        100.000km
+                    </small>
+                </div>
+                <div class="car">
+                    <h3>
+                        chevrolet corsa
+                    </h3>
+                    <small>
+                        100.000km
+                    </small>
+                </div>
+                <div class="car">
+                    <h3>
+                        chevrolet corsa
+                    </h3>
+                    <small>
+                        100.000km
+                    </small>
+                </div>
+                <div class="car">
+                    <h3>
+                        chevrolet corsa
+                    </h3>
+                    <small>
+                        100.000km
+                    </small>
+                </div>
+                <div class="car">
+                    <h3>
+                        chevrolet corsa
+                    </h3>
+                    <small>
+                        100.000km
+                    </small>
+                </div>
+                <div class="car">
+                    <h3>
+                        chevrolet corsa
+                    </h3>
+                    <small>
+                        100.000km
+                    </small>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="buscador.js">
+
+    </script>
+</body>
+
+</html>

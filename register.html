@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="register.css" type="text/css" />
+    <meta charset="utf-8">
+    <title>Registrar</title>
+
+</head>
+
+<body>
+        <a href="./../Home/home.html" class="home">Home</a>
+    <div class="register-container">
+        <div class="card">
+            <div>
+                <label for=nombre>Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div>
+                <label for=apellido>Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+            <div>
+                <label for=domicilio>Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio">
+            </div>
+            <div>
+                <label for=dni>DNI</label>
+                <input type="text" name="dni" id="dni">
+            </div>
+            <div>
+                <label for=fechaNacimiento>Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+            </div>
+            <div>
+                <label>Datos de tarjeta de credito</label>
+                <label for=numeroTarjeta>Numero</label>
+                <input type="text" name="numeroTarjeta" id="numeroTarjeta">
+            </div>
+            <div>
+                <label for=fechaTarjeta>Fecha de Vencimiento (mm-aaaa)</label>
+                <input type="text" name="fechaTarjeta" id="fechaTarjeta">
+            </div>
+            <div>
+                <label for=nombreTitular>Nombre del titular</label>
+                <input type="text" name="nombreTitular" id="nombreTitular">
+            </div>
+            <div>
+                <label for=codigoTarjeta>Codigo</label>
+                <input type="text" name="codigoTarjeta" id="codigoTarjeta">
+            </div>
+            <div>
+                <label for=email>Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div>
+                <label for=pass>Contraseña</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="tipoUsuario">Tipo de usuario</label>
+                <select name="tipoUsuario" id="tipoUsuario" form="usuarioform">
+                    <option value="vendedor">Vendedor</option>
+                    <option value="comprador">Comprador</option>
+                    <option value="ambos">Ambos</option>
+                </select>
+            </div>
+            <input type="button" name="btnRegistrar" id="btnRegistrar" onclick="validar()" value="Registrarse"
+                style="width: 100%">
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="register.js">
+
+    </script>
+</body>
+
+</html>

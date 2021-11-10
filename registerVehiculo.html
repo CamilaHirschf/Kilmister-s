@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="registerVehiculo.css" type="text/css" />
+    <meta charset="utf-8">
+    <title>Registrar Vehiculo</title>
+
+</head>
+
+<body>
+        <a href="./../Home/home.html" class="home">Home</a>
+    <div class="register-container">
+        <div class="card">
+            <div>
+                <h1>Datos del Vehiculo</h1>
+            </div>
+            <div>
+                <label for=modelo>Modelo</label>
+                <input type="text" name="modelo" id="modelo">
+            </div>
+            <div>
+                <label for=marca>Marca</label>
+                <input type="text" name="marca" id="marca">
+            </div>
+            <div>
+                <label for=precio>Precio</label>
+                <input type="text" name="precio" id="precio">
+            </div>
+            <div>
+                <label for=año>Año</label>
+                <input type="text" name="año" id="año">
+            </div>
+            <div>
+                <label for="aceptaPermuta">Acepta permuta?</label>
+                <select name="aceptaPermuta" id="aceptaPermuta" form="permutaform">
+                    <option value="permutaSi">SI</option>
+                    <option value="permutaNo">NO</option>
+                </select>
+            </div>
+            <div>
+                <label for=descripcion>Descripcion</label>
+                <input type="text" name="descripcion" id="descripcion">
+            </div>
+            <div>
+                <label for=imagenes>Imagenes</label>
+                <input type="file" name="imagenes" id="imagenes" multiple="multiple">
+            </div>
+            
+            <input type="button" name="btnRegistrar" id="btnRegistrar" onclick="validar()" value="Registrarse"
+                style="width: 100%">
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="registerVehiculo.js">
+
+    </script>
+</body>
+
+</html>
